@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="introsection">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img src="assets/sarang logo png-04.png" alt=".." width="50px" height="50px">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section3" class="nav-link">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Client Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Media features</a>
+                </li>
+
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="introcontainer">
+            <div class="container-fluid p-0 ">
+                <div class="row">
+                    <div class="col-lg-4 introtext">
+                        <h2>Treat yourself to elegance!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem consectetur augue vulputate
+                            turpis mattis. Imperdiet proin vestibulum et amet facilisi. Justo euismod lorem magna
+                            cursus.
+                            Odio quis tincidunt netus mauris, elementum laoreet.</p>
+                        <button>Book an Appointment</button>
+                    </div>
+                    <div class="col-lg-8 introimage">
+                        <img src="assets/image 7.png" alt="Image1" class="introimage1">
+                        <div class="introbox">
+                            <h4>Whaats new?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem consectetur augue
+                                vulputate turpis mattis. Imperdiet proin vestibulum et amet facilisi. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="aboutsection">
+        <div class="container-fluid p-0 aboutcontainer">
+            <h2>About Us</h2>
+            <div class="row">
+                <div class="col-lg-6 aboutimage">
+                    <img src="assets/image 5.png" alt="" class="aboutimage1">
+                </div>
+                <div class="col-lg-6 abouttext">
+                    <div class="aboutstory">
+                        <h3>Our Story</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero autem velit veritatis nemo
+                            consequatur. Itaque neque maiores voluptas iure, modi, fugit eveniet distinctio culpa quasi
+                            facilis iusto quos quis dolorem.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Libero autem velit veritatis nemo
+                            consequatur. Itaque neque maiores voluptas iure, modi, fugit eveniet distinctio culpa quasi
+                            facilis iusto quos quis dolorem.</p>
+                    </div>
+                    <div class="aboutstory">
+                        <h3>Our Vision</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero autem velit veritatis nemo
+                            consequatur. Itaque neque maiores voluptas iure, modi, fugit eveniet distinctio culpa quasi
+                            facilis iusto quos quis dolorem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        // to close the hamburger menu when we click a link
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
