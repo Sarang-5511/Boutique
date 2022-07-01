@@ -392,6 +392,17 @@ padding-bottom: 40px;
     margin-top: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* About section */
 #aboutsection{
     padding: 6% 8% 10px;
@@ -430,7 +441,7 @@ text-align: center;
 
 /* footer section */
 #footersection{
-    padding: 5% 8% 10px;
+    padding: 6% 8% 10px;
     background-color: #1B1C31;
     color: white;
 }
