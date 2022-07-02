@@ -8,9 +8,14 @@ body {
 }
 
 /* navbar code */
+#navsection{
+    padding: 12px 5%;
+    background-color: #F0E5DA;
+}
 .navbar {
+  
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0;
 }
@@ -61,70 +66,48 @@ body {
 /* Intro section */
 
 #introsection{
-    padding: 20px 12% 10px;
-    background-color: #F0E5DA;
+    padding: 0;
+    
 }
 .introcontainer{
-    padding: 60px 0;
-}
-.introimage{
-    padding-left: 0;
-    margin: auto;
-    text-align: center;
-    width: 100%;
+    /* padding: 60px 0; */
+    background-image: url('assets/image\ 8.png');
+    background-position:initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+
     position: relative;
 }
-.introimage1{
-    height: 600px;
-}
+
 .introbox{
     text-align: left;
     position: absolute;
-    background-color: aliceblue;
-    width: 35%;
-    padding: 15px;
-    right: 15px;
-    bottom: 75px;
+    background-color: white;
+    width: 20%;
+    padding: 20px;
+    right: 226px;
+    bottom: 170px;
+    z-index: 9999;
 }
 .introbox p{
+    color: black;
     text-align: justify;
 }
-.introtext{
-    padding-right: 0;
-}
-.introtext h2{
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 5rem;
-    letter-spacing: 1px;
-    line-height: 80px;
-    padding-bottom: 20px;
-
-}
-.introtext p{
-    font-size: 18px;
-    text-align: justify;
-    padding-bottom: 20px;
-}
-.introtext button {
-    text-align: center;
-    width: 200px;
-    height: 60px;
-    padding: 10px;
-    border: none;
-    background-color: #FFB800;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    font-style: bold;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 0;
+.introstrip{
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background-color: #ffffff;
+    bottom: 250px;  
+    margin: auto;
+   
 }
 
 
 /* About section */
 #aboutsection{
-    padding: 5% 12% 10px;
+    padding: 5% 12%;
     background-color: #F0E5DA;
 
 }
@@ -150,6 +133,95 @@ padding-bottom: 40px;
     font-family: 'Berkshire Swash', cursive;
     font-weight: 400;
 }
+.aboutimage{
+    padding-right: 0;
+    position: relative;
+}
+
+.aboutimage1{
+    width: 80%;
+    margin: auto;
+}
+.aboutimage2{
+    position: absolute;
+    left: -8px;
+    width: 40%;
+   bottom: -9px;
+}
+
+/* 
+clientreview section */
+#clientsection{
+    padding: 20px 0;
+    background-color: #F0E5DA;
+}
+#clientsection h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+  
+    font-family: 'Berkshire Swash', cursive;
+    padding-bottom: 10px;
+
+}
+.clientsectioncont{
+    position: relative;
+    width: 100%;
+    height: 500px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width:500px;
+    height: fit-content;
+    background-color: #f1e8e8;
+   padding: 16px 32px;
+    margin: 10px;
+    filter: blur(2px);
+    border-radius: 10px;
+    text-align: justify;
+  }
+  .swiper-slide-active{
+    filter: blur(0px);
+    background-color:#ffffff;
+  }
+
+  .testimonial{
+  
+    
+    width: 100%;
+    position: relative;
+  }
+  .swiper-3d .swiper-slide-shadow-left,.swiper-3d .swiper-slide-shadow-right{
+    background-image: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -232,6 +304,41 @@ padding-bottom: 40px;
 .footerphone p{
     color: #FBC4AB;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:760px) {
 
     html,
@@ -245,7 +352,15 @@ padding-bottom: 40px;
     }
  
     /* navbar responsive */
- 
+    #navsection{
+        padding: 12px 4%;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
     .nav-menu {
         z-index: 9999;
         padding: 20px 0;

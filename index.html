@@ -8,17 +8,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Italianno&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.typekit.net/qxj7huq.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <section id="introsection">
+    <section id="navsection">
         <nav class="navbar">
             <a href="#" class="nav-logo"><img src="assets/sarang logo png-04.png" alt=".." width="50px" height="50px">
             </a>
@@ -47,27 +48,19 @@
                 <span class="bar"></span>
             </div>
         </nav>
+    </section>
+
+    <section id="introsection">
         <div class="introcontainer">
-            <div class="container-fluid p-0 ">
-                <div class="row">
-                    <div class="col-lg-4 introtext">
-                        <h2>Treat yourself to elegance!</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem consectetur augue vulputate
-                            turpis mattis. Imperdiet proin vestibulum et amet facilisi. Justo euismod lorem magna
-                            cursus.
-                            Odio quis tincidunt netus mauris, elementum laoreet.</p>
-                        <button>Book an Appointment</button>
-                    </div>
-                    <div class="col-lg-8 introimage">
-                        <img src="assets/image 7.png" alt="Image1" class="introimage1">
-                        <div class="introbox">
-                            <h4>Whaats new?</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem consectetur augue
-                                vulputate turpis mattis. Imperdiet proin vestibulum et amet facilisi. </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="introbox">
+                <h4>Whaats new?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem consectetur augue
+                    vulputate turpis mattis. Imperdiet proin vestibulum et amet facilisi. </p>
             </div>
+            <div class="introstrip">
+
+            </div>
+
         </div>
 
     </section>
@@ -79,7 +72,8 @@
             <h2>About Us</h2>
             <div class="row">
                 <div class="col-lg-6 aboutimage">
-                    <img src="assets/image 5.png" alt="" class="aboutimage1">
+                    <img src="assets/Rectangle 20.png" alt="" class="aboutimage1">
+                    <img src="assets/Ellipse 4.png" alt="" class="aboutimage2">
                 </div>
                 <div class="col-lg-6 abouttext">
                     <div class="aboutstory">
@@ -102,6 +96,51 @@
         </div>
     </section>
 
+
+
+
+    <section id="clientsection">
+        <h2>Client Reviews</h2>
+        <div class="clientsectioncont">
+
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                      
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus asperiores dolor,
+                            amet consectetur veritatis quisquam consequuntur excepturi tenetur corporis facilis quos et,
+                            cumque a odit laudantium sapiente saepe hic.</p>
+                      
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus asperiores dolor,
+                            amet consectetur veritatis quisquam consequuntur excepturi tenetur corporis facilis quos et,
+                            cumque a odit laudantium sapiente saepe hic.</p>
+                       
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus asperiores dolor,
+                            amet consectetur veritatis quisquam consequuntur excepturi tenetur corporis facilis quos et,
+                            cumque a odit laudantium sapiente saepe hic.</p>
+                       
+                    </div>
+                </div>
+               
+                
+
+            </div>
+
+        </div>
+        </div>
+    </section>
 
     <section id="footersection">
         <div class="container-fluid p-0">
@@ -197,6 +236,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper",{
+           
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate:0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows:true,
+            },
+            loop:true,
+            
+        });
+    </script>
+
 </body>
 
 </html>
